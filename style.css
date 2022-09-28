@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(56, 59, 80);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamers {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 0 40px;
+}
+
+.gamers h2.o {
+    color: #0f75dc;
+}
+
+.gamers h2.x {
+    color: red;
+}
+
+.gamer {}
+
+.gamer .first {}
+
+.gamer .second {}
+
+.play_ground {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.play_ground .slot {
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+}
+
+.play_ground .slot i {
+    position: absolute;
+}
+
+.play_ground .slot:hover {
+    background: rgb(206, 206, 206);
+}
+
+.play_ground .slot .bi-circle {
+    color: #0f75dc;
+}
+
+.play_ground .slot .bi-x-lg {
+    color: red;
+}
+
+.btn {
+    background: rgb(43, 95, 185);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+}
